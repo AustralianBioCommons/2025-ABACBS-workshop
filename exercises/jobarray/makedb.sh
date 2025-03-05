@@ -1,6 +1,4 @@
 #!/bin/bash -l
-#SBATCH --reservation=UWAbioinformatics
-#SBATCH -A courses01
 #SBATCH -n 1 
 #SBATCH -t 00:05:00
 #SBATCH --export=NONE
