@@ -1,5 +1,4 @@
 #!/bin/bash -l
-#SBATCH -A courses01
 #SBATCH -p copy
 #SBATCH -n 1 
 #SBATCH -t 00:05:00
