@@ -1,6 +1,4 @@
 #!/bin/bash -l
-#SBATCH --reservation=UWAbioinformatics
-#SBATCH --account=courses01
 #SBATCH --ntasks=1
 #SBATCH --mem=1000M
 #SBATCH --time=00:05:00
