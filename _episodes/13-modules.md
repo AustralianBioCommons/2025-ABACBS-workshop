@@ -27,7 +27,6 @@ The supercomputing admin staff make available many popular packages, so that use
 > Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
 >
 > ```
-> We have two versions to choose from: versions 2.7.1 and 2.10.1, as indicated by the numbers after the slash. Let's choose 2.7.1 for this example. 
 > To load a module with a specific version number, use
 > ```bash
 > module load blast/2.12.0--pl5262h3289130_0 
@@ -130,18 +129,6 @@ module avail
    L:  Module is loaded
 
 ```
-
-> ## Questions
-> 1. How many versions of Bowtie2 are installed, and what are the version numbers?
-> 
-> 2. Some modules have a (D) or (L) next to them. What does the (D) or (L) mean?
-> 
-> > ## Solutions
-> > 1. There is one version installed, bowtie2/2.4.5--py36hd4290be_0. Find this out with `module avail bowtie`
-> > 
-> > 2. The (D) indicates the default version of the module that will be loaded if a specific version isn't specified by the user. The (L) indicates modules that are currently loaded. 
-> {: .solution} 
-{: .challenge} 
 
 ## Getting help
 To get a list of all the commands available with the `module` software, use the help function as below
