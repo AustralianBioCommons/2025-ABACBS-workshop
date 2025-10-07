@@ -13,4 +13,10 @@ permalink: index.html  # Is the only page that don't follow the partner /:path/i
 {: .prereq}
 
 
-Like this tutorial?  **Star** it on [Github (button on top right)](https://github.com/pawseySC/bio-intro-containers)!
+Like this tutorial?  **Star** it on [Github (button on top right)](https://github.com/AustralianBioCommons/2025-ABACBS-workshop)!
+
+## Acknowledgements
+
+This tutorial is based on [Intro2HPC](https://github.com/SarahBeecroft/Intro2HPC).
+
+This work is supported by [Australian BioCommons](https://www.biocommons.org.au/) via funding from [Bioplatforms Australia](https://bioplatforms.com/). Bioplatforms Australia is funded by the National Collaborative Research Infrastructure Strategy (NCRIS).
