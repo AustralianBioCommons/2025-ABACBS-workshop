@@ -16,3 +16,11 @@ keypoints:
 - Traditional sequence-based similarity has limited sensitivity.
 - Structure is more conserved than sequence and can provide clues about gene function.
 
+### Case study
+- https://www.ncbi.nlm.nih.gov/nuccore/LN879502.1
+
+
+### References
+- https://www.nature.com/articles/s41586-023-06510-w 
+
+
