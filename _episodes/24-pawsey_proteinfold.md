@@ -7,7 +7,7 @@ objectives:
 - Run nfcore/proteinfold on Setonix
 keypoints:
 - Custom images support AMD GPUs
-- The workflow can be configured to use custom images
+- Workflows can be configured to use custom images
 ---
 ### AMD-compatible images
 The proteinfold workflow includes several modules that are executed on the GPU. Default hosted containers support Nvidia hardware and will not run on the Setonix AMD gpus. Pawsey provides a number of pre-built, AMD-compatible images which can be used to run structure prediction models. We can configure the workflow to use these images using a custom NextFlow config.

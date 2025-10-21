@@ -6,6 +6,7 @@ questions:
     - Is this prediction of sufficient quality for downstream analysis?
 objectives:
 keypoints:
+    - Structure predictions should be interpreted in the context of model confidence.
 ---
 
 - Download the HTML report to your local machine and open in your browser.

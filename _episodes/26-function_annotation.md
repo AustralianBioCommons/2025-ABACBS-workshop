@@ -3,8 +3,10 @@ title: "Using structures for function annotation"
 teaching: 5
 exercises: 5
 questions:
+ - What is the function of this protein?
 objectives:
 keypoints:
+- Similar structures can often share a similar function.
 ---
 
 ### Download structure predictions

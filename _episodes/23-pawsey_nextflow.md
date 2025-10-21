@@ -6,7 +6,9 @@ questions:
 objectives:
 - Run NextFlow pipeline on Setonix
 keypoints:
-- Logging on to Pawsey systems uses SSH (secure shell)
+- Workflows are pulled to the $HOME directory
+- Intermediate work files are available in work/
+- Required images are pulled to work directory but can be stored in a shared cache to avoid duplication
 ---
 ### Load required modules
 Pawsey has pre-installed Nextflow and Singularity which can be loaded in your user environment using
