@@ -2,7 +2,7 @@
 This image is a conceptual diagram showing how Nextflow workflows are structured and how key components interact during execution.
 
 <p align="center">
-<img src="/assets/img/abacbs_nf_run.png" alt="run" width="1000"/>
+<img src="../assets/img/abacbs_nf_run.png" alt="run" width="1000"/>
 </p>
 
 The image is divided into two main sections:
