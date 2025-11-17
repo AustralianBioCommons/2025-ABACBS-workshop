@@ -64,7 +64,6 @@ Before beginning the exercise, navigate to the relevant working directory:
 
 ```bash
 cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise1/
-ls
 ```
 
 Use git to clone the workflow code base to your working directory:

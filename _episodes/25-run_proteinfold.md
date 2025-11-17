@@ -24,7 +24,7 @@ cat samplesheet.csv
 
 output:
 ``` csv
-id,sequence
+id,fasta
 sample0,fasta/PNK_0205.fasta
 ```
 
@@ -90,7 +90,7 @@ nextflow run nf-core/proteinfold/ --input samplesheet.csv \
 - After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output/pipeline_info/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/exercise3/output/pipeline_info/execution_timeline*.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/pipeline_info/execution_timeline*.html ./
 ```
 - **Windows users** can download from WinSCP.
 - From your file browser, open the `execution_timeline` to visualise outputs in your web browser.
@@ -125,7 +125,7 @@ scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/exercise3/outpu
 ## Split MSA run
 
 <p align="center">
-<img src="../abacbs-af2-split.png" alt="af2split" width="800"/>
+<img src="../assets/img/abacbs-af2-split.png" alt="af2split" width="800"/>
 </p>
 
 - Recall that AlphaFold2 relies on generating an MSA by searching large sequence databases.
@@ -136,7 +136,7 @@ scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/exercise3/outpu
 Re-run proteinfold to predict the same protein but this time use AlphaFold2 in `"split_msa_prediction"` mode.
 
 ~~~ bash
-nextflow run ../workflow/proteinfold/ --input samplesheet.csv \
+nextflow run nf-core/proteinfold --input samplesheet.csv \
     --outdir output-split/ --db /scratch/references/abacbs2025/databases/ \
     --mode alphafold2 --use_gpu --alphafold2_mode "split_msa_prediction" \
     -c abacbs_profile.config --slurm_account $PAWSEY_PROJECT -r 53a1008
@@ -147,7 +147,7 @@ nextflow run ../workflow/proteinfold/ --input samplesheet.csv \
 - After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output-split/pipeline_info/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/exercise3/output-split/pipeline_info/execution_timeline*.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output-split/pipeline_info/execution_timeline*.html ./
 ```
 - **Windows users** can download from WinSCP.
 - From your file browser, open the `execution_timeline` to visualise outputs in your web browser.

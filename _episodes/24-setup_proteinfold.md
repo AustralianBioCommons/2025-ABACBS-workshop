@@ -169,7 +169,6 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > ~~~
 > alphafold2_pred-single.sif
 > alphafold2-single.sif
-> boltz2_v2.0.3.sif
 > community-cr-prod.seqera.io-docker-registry-v2-blobs-sha256-24-241f0746484727a3633f544c3747bfb77932e1c8c252e769640bd163232d9112-data.img
 > community-cr-prod.seqera.io-docker-registry-v2-blobs-sha256-ef-eff0eafe78d5f3b65a6639265a16b89fdca88d06d18894f90fcdb50142004329-data.img
 > depot.galaxyproject.org-singularity-multiqc-1.27--pyhdfd78af_0.img
@@ -224,7 +223,7 @@ withName: 'RUN_ALPHAFOLD2' {
 - Check that these databases are available on Setonix.
 
 ```bash
-tree /scratch/references/abacbs2025/databases/
+tree /scratch/references/abacbs2025/databases/ -L 1
 ```
 
 You should see that the required AlphaFold2 databases and model parameters are available here.

@@ -126,7 +126,7 @@ cat samplesheet.csv
 
 output:
 ``` csv
-id,sequence
+id,fasta
 pair1,fasta/SctD-complex.fasta
 pair2,fasta/SctQ-complex.fasta
 ```
@@ -229,7 +229,7 @@ nextflow run nf-core/proteinfold --input samplesheet.csv --outdir output \
 - Using your **local terminal**, download the `pair1_alphafold2_report.html` and `pair1_alphafold2_report.html` files from the `output-multimer/generate/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/exercise4/output/generate/pair*_alphafold2_report.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise4/output/generate/pair*_alphafold2_report.html ./
 ```
 - **Windows users** can download from WinSCP.
 - From your file browser, open the HTML reports to visualise outputs in your web browser.
