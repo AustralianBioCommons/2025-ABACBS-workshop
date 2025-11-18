@@ -19,7 +19,7 @@ In this workshop, we will use the [Setonix HPC](https://pawsey.org.au/systems/se
 The requirements for this workshop are a personal computer with:
 
 - Visual Studio Code (`VSCode`)
-- VSCode extensions: `Remote - SSH`, `nextflow`, `HTML Preview`, and `ArianJamasb.protein-viewer`
+- VSCode extensions: `Remote - SSH`, `HTML Preview`, and `ArianJamasb.protein-viewer`
 - A web browser
 
 Below, you will find instructions on how to set up VSCode and connect to Setonix.
@@ -88,17 +88,6 @@ ssh <username>@setonix.pawsey.org.au
 10. A message will appear for a few moments saying "Setting up SSH Host... Initializing VS Code Server"
 
 10. Once VS Code has been set up on the remote and you are successfully logged in, you will see the text `SSH: <hostname>` in the blue SSH box in the bottom left corner of the window, where `<hostname>` is `setonix.pawsey.org.au`.
-
-
-### Installing the Nextflow extension
-
-Once you have connected to your assigned HPC, you should also install the Nextflow extension, which provides syntax highlighting and can help identify any potential errors in your code. **Note** that this needs to be done **after** you have connected, as you are installing the extension on the **remote** computer, not your local computer or laptop.
-
-1. Once again, click on the extensions button in the left sidebar (the icon with four blocks)
-
-2. In the Extensions Marketplace search bar, search for `nextflow` and install the **"nextflow"** extension.
-
-3. The Nextflow extension should now show as installed and the blue `Install` button has changed to `Uninstall`. You should also now see a new icon in the left sidebar that looks like a curved X shape. This means that the Nextflow extension has been installed correctly. You can now close the extensions tab.
 
 
 **You have now configured VSCode for the workshop!**
