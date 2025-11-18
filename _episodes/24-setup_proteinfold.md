@@ -7,9 +7,9 @@ objectives:
 - Locate the resources available to support running AlphaFold2 on Setonix.
 - Prepare a Nextflow configuration file to utilise available resources.
 keypoints:
-- Software designed for GPU execution is often compiled for Nvidia GPUS.
+- Software designed for GPU execution is often compiled for NVIDIA GPUs.
 - Custom images can be built to support execution using AMD GPUs.
-- Container images (Singularity) can be cached in a shared directory to avoid duplication and speed up workflows.
+- Container images (i.e. Singularity) can be cached in a shared directory to avoid duplication and speed up workflows.
 ---
 
 <p align="center">
@@ -18,14 +18,14 @@ keypoints:
 
 ## Setup
 
-- Before commencing the exercise, navigate to the relevant working directory
+Before commencing the exercise, navigate to the relevant working directory:
 
 ```bash
 cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise3/
 ls
 ```
 
-- You should see the following files which will be used in this exercise:
+You should see the following files which will be used in this exercise:
 
 ```
 abacbs_profile.config  examples  fasta  samplesheet.csv
@@ -34,7 +34,7 @@ abacbs_profile.config  examples  fasta  samplesheet.csv
 ## nf-core/proteinfold
 - [proteinfold](https://github.com/nf-core/proteinfold/tree/dev) is a Nextflow pipeline designed to support numerous models for molecular structure prediction.
 - Today, we will use proteinfold to predict the structure of our uncharacterised protein using the AlphaFold2 model.
-- We will use a development branch (commit: 53a1008) to access some of the latest features that are not yet available in the current release.
+- We will use a development branch (`commit: 53a1008`) to access some of the latest features that are not yet available in the current release.
 
 ```bash
 #module load nextflow/25.04.6 # This should still be loaded from the previous exercise
@@ -131,8 +131,9 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 
 
 > ## Setup environment
-> - The previous exercise didn’t use containers, but they are one of the most effective ways to manage software in workflow development, especially with Nextflow.
-> - In this exercise, we will be using singularity containers and so we need to load the corresponding module on Setonix.
+> The previous exercise didn’t use containers, but they are one of the most effective ways to manage software in workflow development, especially with Nextflow.
+> 
+> In this exercise, we will be using singularity containers and so we need to load the corresponding module on Setonix.
 >
 > ```bash
 > module load singularity/4.1.0-slurm
@@ -146,9 +147,11 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > > It is recommended to pull containers from trusted sources like [BioContainers](https://biocontainers.pro/), [quay.io](quay.io) or [Seqera](https://seqera.io/containers/). During execution, Nextflow automatically pulls required images, often from these repositories, and stores them in the work directory.
 > {: .solution} 
 >
-> - Before executing the workflow, we will define a number of environment variables.
-> - These variables tell Nextflow and Singularity where to find and store container images so you don’t waste time and space downloading them repeatedly.
-> - **Note: These environment variables need to be set each time you log in to the HPC system (or include them in your job submission script before running Nextflow).**
+> Before executing the workflow, we will define a number of environment variables.
+> 
+> These variables tell Nextflow and Singularity where to find and store container images so you don’t waste time and space downloading them repeatedly.
+> 
+> **Note: These environment variables need to be set each time you log in to the HPC system (or include them in your job submission script before running Nextflow).**
 >
 > ~~~
 > mkdir $MYSCRATCH/containers
@@ -159,13 +162,14 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > ~~~
 > {: .source}
 >
-> - Confirm that several images are visible to nextflow by:
+> Confirm that several images are visible to nextflow by:
 >
 > ~~~
 > ls $NXF_SINGULARITY_LIBRARYDIR
 > ~~~
 > {: .source}
-> output:
+>
+> Output:
 > ~~~
 > alphafold2_pred-single.sif
 > alphafold2-single.sif
@@ -177,10 +181,11 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > quay.io-nf-core-proteinfold_alphafold2_msa-dev.img
 > ~~~
 >
-> - If you execute a Nextflow workflow that requires a container that is not located in the shared `$NXF_SINGULARITY_LIBRARYDIR`, the pipeline will attempt to pull the container from a hosted repository and store the image in your personal `$NXF_SINGULARITY_CACHEDIR`.
+> If you execute a Nextflow workflow that requires a container that is not located in the shared `$NXF_SINGULARITY_LIBRARYDIR`, the pipeline will attempt to pull the container from a hosted repository and store the image in your personal `$NXF_SINGULARITY_CACHEDIR`.
 >
 > > ## **Background:** Why Environment Variables?
-> > When using containers on HPC systems, Nextflow needs to know where to store and retrieve container images. By default, it downloads containers into the workflow’s `work/` directory, which can be inefficient and waste storage if you run multiple workflows.
+> > When using containers on HPC systems, Nextflow needs to know where to store and retrieve container images. 
+> > By default, it downloads containers into the workflow’s `work/` directory, which can be inefficient and waste storage if you run multiple workflows.
 > >
 > > Setting environment variables allows you to:
 > > - Cache container images in a shared location → Avoid repeated downloads and speed up execution.
@@ -199,17 +204,18 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 - We can configure the workflow to use these non-standard images by defining their path in a custom Nextflow config.
 
 > ## Note
-> - Normally AlphaFold2 runs 5 different models and picks the best result.
-> - Today we are using a modified version of AlphaFold2 that only runs a single model to reduce execution time.
+> Normally AlphaFold2 runs 5 different models and picks the best result.
+> 
+> Today we are using a modified version of AlphaFold2 that only runs a single model to reduce execution time.
 {: .prereq}
 
-Check the `abacbs_workshop.config` file to confirm that the workflow modules are configured to use non-standard images available on Setonix.
+Check the `abacbs_workshop.config` file to confirm that the workflow modules are configured to use non-standard images available on Setonix:
 
 ```bash
 grep -w RUN_ALPHAFOLD2 abacbs_profile.config -A3
 ```
 
-output:
+Output:
 ```
 withName: 'RUN_ALPHAFOLD2' {
     container = '/scratch/references/abacbs2025/containers/alphafold2-single.sif'
