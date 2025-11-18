@@ -12,19 +12,20 @@ keypoints:
     - Workflows can be resumed without re-doing completed tasks.
 ---
 
+## Binding partners
+
+In the canonical Type III secretion system, **SctK** is known to form direct interactions with **SctD** and **SctQ**.
+
 <p align="center">
 <img src="../assets/img/abacbs-t3ss.png" alt="af2split" width="400"/>
 </p>
 
 **Available from:** *Samuel Wagner, Iwan Grin, Silke Malmsheimer, Nidhi Singh, Claudia E Torres-Vargas, Sibel Westerhausen, Bacterial type III secretion systems: a complex device for the delivery of bacterial effector proteins into eukaryotic host cells, FEMS Microbiology Letters, Volume 365, Issue 19, October 2018, fny201,*
 
-## Binding partners
-
-In the canonical Type III secretion system, **SctK** is known to form direct interactions with **SctD** and **SctQ**.
-
 Can we identify the **SctD** and **SctQ** genes in our target genome?
 
 Let's view our [assembly](https://www.ncbi.nlm.nih.gov/nuccore/LN879502.1) on the NCBI website and search for genes annotated as **SctD** and **SctK**.
+
 
 > ## SctD
 > 

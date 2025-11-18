@@ -164,14 +164,14 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > export NXF_SINGULARITY_LIBRARYDIR=/scratch/references/abacbs2025/containers
 > ~~~
 > {: .source}
->
+> <br>
 > Confirm that several images are visible to nextflow by:
 >
 > ~~~
 > ls $NXF_SINGULARITY_LIBRARYDIR
 > ~~~
 > {: .source}
->
+> <br>
 > Output:
 > ~~~
 > alphafold2_pred-single.sif
@@ -183,7 +183,7 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 > depot.galaxyproject.org-singularity-python-3.8.3.img
 > quay.io-nf-core-proteinfold_alphafold2_msa-dev.img
 > ~~~
->
+> <br>
 > If you execute a Nextflow workflow that requires a container that is not located in the shared `$NXF_SINGULARITY_LIBRARYDIR`, the pipeline will attempt to pull the container from a hosted repository and store the image in your personal `$NXF_SINGULARITY_CACHEDIR`.
 >
 > > ## **Background:** Why Environment Variables?
@@ -201,7 +201,7 @@ tree $NXF_HOME/assets/nf-core/proteinfold/ -L 2 --filelimit=20
 
 ## AMD-compatible images
 - The proteinfold workflow includes several modules that are executed on the GPU. 
-- Default containers [hosted](https://quay.io/organization/nf-core) by the nf-core organisation support Nvidia hardware and will not run on the Setonix AMD gpus. 
+- Default containers [hosted](https://quay.io/organization/nf-core) by the nf-core organisation support NVIDIA hardware and will not run on the Setonix AMD GPUs. 
 - Pawsey provides a number of AMD-compatible [containers](https://quay.io/organization/pawsey) which can be used to run structure prediction models. 
 - Pre-built images have been provided for the workshop today at `/scratch/references/abacbs2025/containers`. 
 - We can configure the workflow to use these non-standard images by defining their path in a custom Nextflow config.
