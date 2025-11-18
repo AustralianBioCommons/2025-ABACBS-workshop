@@ -12,10 +12,6 @@ keypoints:
 - Container images (i.e. Singularity) can be cached in a shared directory to avoid duplication and speed up workflows.
 ---
 
-<p align="center">
-<img src="../assets/img/abacbs-proteinfold-metromap.svg" alt="pfold" width="800"/>
-</p>
-
 ## Setup
 
 Before commencing the exercise, navigate to the relevant working directory:
@@ -32,9 +28,16 @@ abacbs_profile.config  examples  fasta  samplesheet.csv
 ```
 
 ## nf-core/proteinfold
-- [proteinfold](https://github.com/nf-core/proteinfold/tree/dev) is a Nextflow pipeline designed to support numerous models for molecular structure prediction.
-- Today, we will use proteinfold to predict the structure of our uncharacterised protein using the AlphaFold2 model.
-- We will use a development branch (`commit: 53a1008`) to access some of the latest features that are not yet available in the current release.
+
+[proteinfold](https://github.com/nf-core/proteinfold/tree/dev) is a Nextflow pipeline designed to support numerous models for molecular structure prediction.
+
+<p align="center">
+<img src="../assets/img/abacbs-proteinfold-metromap.svg" alt="pfold" width="800"/>
+</p>
+
+Today, we will use proteinfold to predict the structure of our uncharacterised protein using the AlphaFold2 model.
+
+We will use a development branch (`commit: 53a1008`) to access some of the latest features that are not yet available in the current release.
 
 ```bash
 #module load nextflow/25.04.6 # This should still be loaded from the previous exercise
