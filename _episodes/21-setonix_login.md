@@ -30,15 +30,6 @@ username@setonix-01:~>
 If you are unable to login, please first check your password was typed correctly. If you are still unable to login, please ask for assistance.
 
 
-### Logging in using PUTTY (Windows)
-Host name is `setonix.pawsey.org.au`
-
-Port is `22`
-
-User name is the name you selected on the training accounts sheet e.g. something like `cou001`
-
-Helpful link: [https://www.hostinger.com/tutorials/how-to-use-putty-ssh](https://www.hostinger.com/tutorials/how-to-use-putty-ssh)
-
 > ## **Important**
 > - Login to Setonix with two separate terminals now.
 >   - One will be used to execute workflows.
