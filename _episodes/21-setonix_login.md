@@ -10,11 +10,13 @@ objectives:
 keypoints:
 - Logging on to Pawsey systems uses SSH (secure shell)
 ---
-### Getting your user names and passwords
-We have created some training usernames and passwords for you. These are available on the google sheet linked on the PowerPoint slide. Go to that link and put your name next to one of the usernames to claim it for yourself. That will be your username and password for this whole workshop.
+### Getting your username and password
+
+We have created some training usernames and passwords for you. These are available in a GoogleSheet that can be accessed via a link on the PowerPoint slide. Go to that link and put your name next to one of the usernames to claim it for yourself. That will be your username and password for the whole workshop.
 
 ### Logging on to Setonix with Terminal or Windows PowerShell
-Your user name and password will be supplied. Within a terminal window, type:
+
+Your username and password will be supplied. Within a terminal window, type:
 
 ```bash
 ssh username@setonix.pawsey.org.au
