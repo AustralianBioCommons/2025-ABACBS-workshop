@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Code (VSCode) setup"
+title: "Visual Studio Code (VSCode) setup and HPC connection"
 teaching: 5
 exercises: 5
 questions:
@@ -7,8 +7,12 @@ objectives:
 - Install VSCode
 - Install VSCode extensions
 - Connect to Setonix HPC
+- Learn how to remote access Setonix
+- Learn about Pawsey-specific user shortcuts and their meanings
+- Set up the working environment by downloading lesson materials
 keypoints:
 - Before the workshop, you must have `VSCode` and the relevant extensions installed, and be able to connect to the Setonix HPC.
+- Logging on to Pawsey systems uses SSH (secure shell)
 ---
 
 
@@ -58,10 +62,12 @@ Specific `VSCode` extensions are required.
 
 5. Repeat steps 2-3 for `HTML Preview` and `ArianJamasb.protein-viewer`
 
+**You have now configured VSCode for the workshop!**
+
 
 ### Connecting to the HPCs
 
-Ensure you have your training details of your assigned system.
+We have created training usernames and passwords for you. These are available in a GoogleSheet that can be accessed via a link on the PowerPoint slide. Go to that link and put your name next to one of the usernames to claim it for yourself. That will be your username and password for the whole workshop.
 
 1. Click the blue bar in the bottom left corner of the window. A menu will appear up the top of the window.
 
@@ -87,11 +93,75 @@ ssh <username>@setonix.pawsey.org.au
 
 10. A message will appear for a few moments saying "Setting up SSH Host... Initializing VS Code Server"
 
-10. Once VS Code has been set up on the remote and you are successfully logged in, you will see the text `SSH: <hostname>` in the blue SSH box in the bottom left corner of the window, where `<hostname>` is `setonix.pawsey.org.au`.
+11. Once VS Code has been set up on the remote and you are successfully logged in, you will see the text `SSH: <hostname>` in the blue SSH box in the bottom left corner of the window, where `<hostname>` is `setonix.pawsey.org.au`.
 
 
-**You have now configured VSCode for the workshop!**
+### Logging on to Setonix with Terminal or Windows PowerShell
+
+Your username and password will be supplied. Within a terminal window, type:
+
+```bash
+ssh username@setonix.pawsey.org.au
+```
+Enter your password when prompted. If asked to accept any credentials, type `yes` and hit enter
+
+If you have successfully logged in, you should see your command prompt change
+
+```output
+username@setonix-01:~>
+```
+
+If you are unable to login, please first check your password was typed correctly. If you are still unable to login, please ask for assistance.
+
+
+> ## **Important**
+> - Login to Setonix with two separate terminals now.
+>   - One will be used to execute workflows.
+>   - The other will be used to browse outputs and monitor jobs.
+> - Keep an additional local terminal for downloading result files.
+{: .prereq}
+
+
+### Useful shortcuts that Pawsey sets up for you
+
+To save you some time typing, Pawsey has set up some shortcuts for all users. We will make use of these throughout the hands-on session. Let's look at them:
+
+| Shortcut | Meaning |
+|----------|----------|
+| $USER | Your unique user ID. e.g. `cou001` or `sbeecroft` |
+| $PAWSEY_PROJECT | Your default project code (some people are members of multiple projects). e.g. `courses` or `pawsey1086` |
+| $MYSCRATCH | Path to your default scratch directory. e.g. `/scratch/courses/cou001/` |
+| $MYSOFTWARE | Path to your default software directory. e.g. `/software/projects/courses/cou001` |
+
+
+### Set up your workspace and download the lesson material
+
+1. In the left-hand sidebar of VSCode, click on the "Explorer" tab (an icon that looks like two sheets of paper).
+
+2. Click on "Open Folder"
+
+3. In the text box that appears, enter the path of your assigned directory in the HPC scratch space:
+
+    ```bash
+    $MYSCRATCH
+    ```
+
+4. Your directory in the scratch space will be empty. You need to clone the workshop materials into this space. To do this, open the VSCode terminal (`Ctrl + J` for Windows/Linux, `Cmd + J` for Mac) and run the following commands:
+
+    ```bash
+    cd $MYSCRATCH
+    git clone https://github.com/tlitfin/2025-ABACBS-workshop
+    cd 2025-ABACBS-workshop/exercises/
+    ls
+    ```
+
+5. If you've successfully cloned the git repo, the `ls` command will return the following:
+
+    ```output
+    exercise1  exercise2  exercise3  exercise4
+    ```
+
 
 ### Acknowledgements
 
-Setup content adapted with permission from a Sydney Informatics Hub (SIH, University of Sydney) [Nextflow and HPC workshop](https://sydney-informatics-hub.github.io/nextflow-hpc-workshop/setup/).
+Setup content copied and adapted with permission from a Sydney Informatics Hub (SIH, University of Sydney) [Nextflow and HPC workshop](https://sydney-informatics-hub.github.io/nextflow-hpc-workshop/).
