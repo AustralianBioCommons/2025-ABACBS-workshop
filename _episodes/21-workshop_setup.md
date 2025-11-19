@@ -66,12 +66,6 @@ To save you some time typing, Pawsey has set up some shortcuts for all users. We
 
 1. Open the VSCode terminal (`Ctrl + J` for Windows/Linux, `Cmd + J` for Mac) and run the following command:
 
-    ```bash
-    salloc -t 2:00:00 -c 2 --mem 4GB
-    ```
-
-    This will request an interactive job on a compute node which we can use to execute our workflows.
-
 2. In the same terminal execute the following commands:
 
     ```bash
@@ -81,23 +75,29 @@ To save you some time typing, Pawsey has set up some shortcuts for all users. We
 
     ```bash
     git clone https://github.com/tlitfin/2025-ABACBS-workshop
-    cd 2025-ABACBS-workshop/
-    ls exercises/
+    cd 2025-ABACBS-workshop/exercises/
+    ls
     ```
 
 4. If you've successfully cloned the git repo, the `ls exercises` command will return the following:
 
     ```output
-    exercise1  exercise2  exercise3  exercise4
+    exercise1  exercise2  exercise3
     ```
 
-5. In the same terminal, execute `pwd` to find the current working directory (eg `/scratch/courses/<username>/2025-ABACBS-workshop`). 
+5. In the same terminal, execute `pwd` to find the current working directory (eg `/scratch/courses/<username>/2025-ABACBS-workshop/exercises/`). 
 
 6. In the left-hand sidebar of VSCode, click on the "Explorer" tab (an icon that looks like two sheets of paper).
 
 7. Click on "Open Folder"
 
-8. In the text box that appears, enter the path of your current working directory identified above (eg `/scratch/courses/<username>/2025-ABACBS-workshop`):
+8. In the text box that appears, enter the path of your current working directory identified above (eg `/scratch/courses/<username>/2025-ABACBS-workshop/exercises/`):
+
+9. In the terminal, execute the following command to start an interactive session on a compute node which we can use to execute our workflows.
+
+   ```bash
+    salloc -t 2:00:00 -c 2 --mem 4GB
+    ```
 
 
 ### Acknowledgements

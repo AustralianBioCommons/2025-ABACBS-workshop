@@ -37,10 +37,16 @@ sample0,fasta/PNK_0205.fasta
 
 
 ~~~ bash
-nextflow run nf-core/proteinfold/ --input samplesheet.csv \
-    --outdir output/ --db /scratch/references/abacbs2025/databases/ \
-    --mode alphafold2 --use_gpu --alphafold2_mode "standard" \
-    -c abacbs_profile.config --slurm_account $PAWSEY_PROJECT -r 53a1008
+nextflow run nf-core/proteinfold/ \
+    --input samplesheet.csv \
+    --outdir output/ \
+    --db /scratch/references/abacbs2025/databases/ \
+    --mode alphafold2 \
+    --use_gpu \
+    --alphafold2_mode "standard" \
+    -c abacbs_profile.config \
+    --slurm_account $PAWSEY_PROJECT \
+    -r 53a1008
 ~~~
 {: .source}
 
@@ -145,10 +151,16 @@ Nextflow can send jobs to the appropriate resource.
 Re-run proteinfold to predict the same protein but this time use AlphaFold2 in `"split_msa_prediction"` mode.
 
 ~~~ bash
-nextflow run nf-core/proteinfold --input samplesheet.csv \
-    --outdir output-split/ --db /scratch/references/abacbs2025/databases/ \
-    --mode alphafold2 --use_gpu --alphafold2_mode "split_msa_prediction" \
-    -c abacbs_profile.config --slurm_account $PAWSEY_PROJECT -r 53a1008
+nextflow run nf-core/proteinfold \
+    --input samplesheet.csv \
+    --outdir output-split/ \
+    --db /scratch/references/abacbs2025/databases/ \
+    --mode alphafold2 \
+    --use_gpu \
+    --alphafold2_mode "split_msa_prediction" \
+    -c abacbs_profile.config \
+    --slurm_account $PAWSEY_PROJECT \
+    -r 53a1008
 ~~~
 {: .source}
 

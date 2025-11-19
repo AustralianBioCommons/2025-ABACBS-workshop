@@ -171,10 +171,16 @@ pair2,fasta/SctQ-complex.fasta
 ## Predict multimers
 
 ~~~ bash
-nextflow run nf-core/proteinfold --input samplesheet.csv --outdir output \ 
+nextflow run nf-core/proteinfold \
+    --input samplesheet.csv \
+    --outdir output \
     --db /scratch/references/abacbs2025/databases/ \
-    --mode alphafold2 --alphafold2_model_preset multimer --use_gpu \
-    -c abacbs_profile-multimer.config --slurm_account $PAWSEY_PROJECT -r 53a1008
+    --mode alphafold2 \
+    --alphafold2_model_preset multimer \
+    --use_gpu \
+    -c abacbs_profile-multimer.config \
+    --slurm_account $PAWSEY_PROJECT \
+    -r 53a1008
 ~~~
 {: .source}
 
@@ -215,10 +221,17 @@ Before the pipeline is completed, cancel the execution by pressing `Ctrl` + `c`.
 Re-start our multimer predictions using the original command in combination with the `-resume` parameter.
 
 ~~~ bash
-nextflow run nf-core/proteinfold --input samplesheet.csv --outdir output \ 
+nextflow run nf-core/proteinfold \
+    --input samplesheet.csv \
+    --outdir output \
     --db /scratch/references/abacbs2025/databases/ \
-    --mode alphafold2 --alphafold2_model_preset multimer --use_gpu \
-    -c abacbs_profile-multimer.config --slurm_account pawsey1017 -r 53a1008 -resume
+    --mode alphafold2 \
+    --alphafold2_model_preset multimer \
+    --use_gpu \
+    -c abacbs_profile-multimer.config \
+    --slurm_account $PAWSEY_PROJECT \
+    -r 53a1008 \ 
+    -resume
 ~~~
 {: .source}
 
