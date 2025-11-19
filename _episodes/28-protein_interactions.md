@@ -93,7 +93,7 @@ Let's see if our uncharacterised protein is predicted to form a high confidence 
 Navigate to the new working directory for this exercise
 
 ```bash
-cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise4/
+cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise3/
 ```
 
 Check that the FASTA files for the two target complexes are available in the `fasta/` directory.
@@ -245,7 +245,7 @@ Note that this will depend on the resources available when the workflow is being
 Using your **local terminal**, download the `pair1_alphafold2_report.html` and `pair1_alphafold2_report.html` files from the `output-multimer/generate/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise4/output/generate/pair*_alphafold2_report.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/generate/pair*_alphafold2_report.html ./
 ```
 
 **Windows users** can download from WinSCP.

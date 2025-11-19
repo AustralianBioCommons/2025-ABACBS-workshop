@@ -24,7 +24,7 @@ keypoints:
 From your **local terminal**, download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/alphafold2/standard/sample0/sample0_alphafold2.pdb ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/alphafold2/standard/sample0/sample0_alphafold2.pdb ./
 ```
 **Windows users** can download from WinSCP.
 

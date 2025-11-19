@@ -95,7 +95,7 @@ nextflow run nf-core/proteinfold/ --input samplesheet.csv \
 After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output/pipeline_info/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/pipeline_info/execution_timeline*.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/pipeline_info/execution_timeline*.html ./
 ```
 **Windows users** can download from WinSCP.
 
@@ -160,7 +160,7 @@ nextflow run nf-core/proteinfold --input samplesheet.csv \
 After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output-split/pipeline_info/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output-split/pipeline_info/execution_timeline*.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output-split/pipeline_info/execution_timeline*.html ./
 ```
 **Windows users** can download from WinSCP.
 

@@ -68,7 +68,7 @@ tree output/ -L 4
 Using your **local terminal**, download the `sample0_alphafold2_report.html` file from the `output-split/generate/` directory.
 
 ``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/generate/sample0_alphafold2_report.html ./
+scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/generate/sample0_alphafold2_report.html ./
 ```
 **Windows users** can download from WinSCP.
 From your file browser, open the HTML report to visualise outputs in your web browser.
@@ -145,7 +145,7 @@ See what interpretations you can make about these output reports.
 > Using your **local terminal**, download the `example1_alphafold2_report.html` file from the `examples/` directory.
 > 
 > ~~~ bash
-> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/examples/example1_alphafold2_report.html ./
+> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/examples/example1_alphafold2_report.html ./
 > ~~~
 > {: .source}
 > <br>
@@ -172,7 +172,7 @@ See what interpretations you can make about these output reports.
 > Using your **local terminal**, download the `example2_alphafold2_report.html` file from the `examples/` directory.
 > 
 > ~~~ bash
-> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/examples/example2_alphafold2_report.html ./
+> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/examples/example2_alphafold2_report.html ./
 > ~~~
 > {: .source}
 > <br>

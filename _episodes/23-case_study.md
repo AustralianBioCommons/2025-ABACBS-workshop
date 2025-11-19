@@ -19,7 +19,7 @@ In this session, we’ll walk through a case study from the genome of [Candidatu
 Before commencing the exercise, navigate to the relevant working directory:
 
 ```bash
-cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise2/
+cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise1/
 ```
 
 Download the Genbank genome annotation file:

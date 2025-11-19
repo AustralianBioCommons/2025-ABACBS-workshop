@@ -17,7 +17,7 @@ keypoints:
 Before commencing the exercise, navigate to the relevant working directory:
 
 ```bash
-cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise3/
+cd $MYSCRATCH/2025-ABACBS-workshop/exercises/exercise2/
 ls
 ```
 
@@ -40,7 +40,7 @@ Today, we will use proteinfold to predict the structure of our uncharacterised p
 We will use a development branch (`commit: 53a1008`) to access some of the latest features that are not yet available in the current release.
 
 ```bash
-#module load nextflow/25.04.6 # This should still be loaded from the previous exercise
+module load nextflow/25.04.6 
 nextflow pull nf-core/proteinfold -r 53a1008
 ```
 

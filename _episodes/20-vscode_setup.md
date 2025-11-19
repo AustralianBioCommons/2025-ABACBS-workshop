@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Code (VSCode) setup and HPC connection"
+title: "Visual Studio Code (VSCode) setup"
 teaching: 0
 exercises: 0
 questions:
