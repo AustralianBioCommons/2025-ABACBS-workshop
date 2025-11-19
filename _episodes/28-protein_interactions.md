@@ -242,15 +242,11 @@ Note that this will depend on the resources available when the workflow is being
 
 ## Results
 
-Using your **local terminal**, download the `pair1_alphafold2_report.html` and `pair1_alphafold2_report.html` files from the `output-multimer/generate/` directory.
+After the workflow has completed, view the `pair1_alphafold2_report.html` file located in the `output-multimer/generate/` directory.
 
-``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise3/output/generate/pair*_alphafold2_report.html ./
-```
+You can find the file by navigating to the `exercises/exercise3/output-multimer/generate/` directory in the VS-code file browser on the left-hand panel.
 
-**Windows users** can download from WinSCP.
-
-From your file browser, open the HTML reports to visualise outputs in your web browser.
+Right-click the `pair1_alphafold2_report.html` file and select `Preview`.
 
 > ## SctD
 > {% raw %}

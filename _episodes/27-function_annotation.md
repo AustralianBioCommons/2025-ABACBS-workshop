@@ -21,12 +21,11 @@ keypoints:
 
 ## Download structure predictions
 
-From your **local terminal**, download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory.
+Download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory.
 
-``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/alphafold2/standard/sample0/sample0_alphafold2.pdb ./
-```
-**Windows users** can download from WinSCP.
+You can find the file by navigating to the `output/alphafold2/standard/sample0/` directory in the VS-code file browser on the left-hand panel.
+
+Right-click the `sample0_alphafold2.pdb` file and select `Download`.
 
 ## Foldseek
 

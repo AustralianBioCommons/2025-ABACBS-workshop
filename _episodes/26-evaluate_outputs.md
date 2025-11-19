@@ -65,13 +65,11 @@ tree output/ -L 4
 > Summary reporting information can be visualised in the `sample0_alphafold2_report.html` file.
 {: .prereq}
 
-Using your **local terminal**, download the `sample0_alphafold2_report.html` file from the `output-split/generate/` directory.
+After the workflow has completed, view the `sample0_alphafold2_report.html` file located in the `output/generate/` directory.
 
-``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/generate/sample0_alphafold2_report.html ./
-```
-**Windows users** can download from WinSCP.
-From your file browser, open the HTML report to visualise outputs in your web browser.
+You can find the file by navigating to the `exercises/exercise2/output/generate/` directory in the VS-code file browser on the left-hand panel.
+
+Right-click the `sample0_alphafold2_report.html` file and select `Preview`.
 
 ## Predicted local distance difference test (pLDDT)
 
@@ -142,16 +140,11 @@ See what interpretations you can make about these output reports.
 
 > ## Example 1
 > 
-> Using your **local terminal**, download the `example1_alphafold2_report.html` file from the `examples/` directory.
+> After the workflow has completed, view the `example1_alphafold2_report.html` file located in the `examples/` directory.
 > 
-> ~~~ bash
-> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/examples/example1_alphafold2_report.html ./
-> ~~~
-> {: .source}
-> <br>
-> **Windows users** can download from WinSCP.
+> You can find the file by navigating to the `exercises/exercise2/examples/` directory in the VS-code file browser on the left-hand panel.
 > 
-> From your file browser, open the HTML report to visualise outputs in your web browser.
+> Right-click the `example1_alphafold2_report.html` file and select `Preview`.
 {: .prereq}
 
 > ## Example 1
@@ -169,16 +162,11 @@ See what interpretations you can make about these output reports.
 
 > ## Example 2
 > 
-> Using your **local terminal**, download the `example2_alphafold2_report.html` file from the `examples/` directory.
+> After the workflow has completed, view the `example2_alphafold2_report.html` file located in the `examples/` directory.
 > 
-> ~~~ bash
-> scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/examples/example2_alphafold2_report.html ./
-> ~~~
-> {: .source}
-> <br>
-> **Windows users** can download from WinSCP.
+> You can find the file by navigating to the `exercises/exercise2/examples/` directory in the VS-code file browser on the left-hand panel.
 > 
-> From your file browser, open the HTML report to visualise outputs in your web browser.
+> Right-click the `example2_alphafold2_report.html` file and select `Preview`.
 {: .prereq}
 
 > ## Example 2

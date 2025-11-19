@@ -92,14 +92,11 @@ nextflow run nf-core/proteinfold/ --input samplesheet.csv \
 
 ### Job Accounting
 
-After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output/pipeline_info/` directory.
+After the workflow has completed, view the `execution_timeline` HTML file located in the `output/pipeline_info/` directory.
 
-``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output/pipeline_info/execution_timeline*.html ./
-```
-**Windows users** can download from WinSCP.
+You can find the file by navigating to the `exercises/exercise2/output/pipeline_info/` directory in the VS-code file browser on the left-hand panel
 
-From your file browser, open the `execution_timeline` to visualise outputs in your web browser.
+Right-click the `execution_timeline` file and select `Preview`.
 
 > ## Execution timeline
 > 
@@ -157,18 +154,15 @@ nextflow run nf-core/proteinfold --input samplesheet.csv \
 
 ### Job Accounting
 
-After the workflow has completed, using your **local terminal**, download the `execution_timeline` HTML file located in the `output-split/pipeline_info/` directory.
+After the workflow has completed, view the `execution_timeline` HTML file located in the `output-split/pipeline_info/` directory.
 
-``` bash
-scp <username>@setonix.pawsey.org.au:/scratch/courses/<username>/2025-ABACBS-workshop/exercises/exercise2/output-split/pipeline_info/execution_timeline*.html ./
-```
-**Windows users** can download from WinSCP.
+You can find the file by navigating to the `exercises/exercise2/output/pipeline_info/` directory in the VS-code file browser on the left-hand panel
 
-From your file browser, open the `execution_timeline` to visualise outputs in your web browser.
+Right-click the `execution_timeline` file and select `Preview`.
 
 > ## Execution timeline
 > 
-> Here is an example timeline from a full AlphaFold2 run using `"split_msa_prediction` for this target protein.
+> Here is an example timeline from a full AlphaFold2 run using `"split_msa_prediction"` for this target protein.
 > 
 > Your execution time will be greatly reduced by using **dummy** miniature databases and generating only a single AlphaFold2 model output.
 > {% raw %}
