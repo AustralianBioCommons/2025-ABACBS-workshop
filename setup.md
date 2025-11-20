@@ -5,22 +5,22 @@ root: .
 ---
 
 
-# Key requirements
+## Key requirements
 
 The main requirement for this workshop is a personal computer with a web browser and [Visual Studio Code (`VSCode`)](https://code.visualstudio.com/). This equipment will allow you to follow the online materials and login to a facility with the required software stack.
 
 You should also be familiar with bash scripting. This is an introduction to Bash that you might find useful: [The Unix Shell: Summary and Setup](https://swcarpentry.github.io/shell-novice/) 
 
-## Suggested:
+### Suggested
 
 - Google account to run colab notebooks: [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb#scrollTo=mbaIO9pWjaN0) and [SPfast](https://colab.research.google.com/github/tlitfin/SPfast/blob/main/notebooks/SPfast_AFDB_clusters_PFAM.ipynb).
 
-## Recommended for use after the workshop:
+### Recommended for use after the workshop
 
 - Molecular Viewer installed (PyMOL/ChimeraX)
 
 
-# Set up your computer
+## Set up your computer
 
 In this workshop, we will use the [Setonix HPC](https://pawsey.org.au/systems/setonix/) at [Pawsey Supercomputing Research Centre](https://pawsey.org.au/) (Perth, WA). 
 
@@ -61,6 +61,6 @@ Specific `VSCode` extensions are required.
 **You have now configured VSCode for the workshop!**
 
 
-### Acknowledgements
+## Acknowledgements
 
 Setup content copied and adapted with permission from a Sydney Informatics Hub (SIH, University of Sydney) [Nextflow and HPC workshop](https://sydney-informatics-hub.github.io/nextflow-hpc-workshop/).
