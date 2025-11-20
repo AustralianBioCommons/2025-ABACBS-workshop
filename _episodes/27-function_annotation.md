@@ -21,17 +21,24 @@ keypoints:
 
 ## Download structure predictions
 
-Download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory.
+1. Download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory. You can find the file by navigating to the `output/alphafold2/standard/sample0/` directory in the VS-code file browser on the left-hand panel.
 
-You can find the file by navigating to the `output/alphafold2/standard/sample0/` directory in the VS-code file browser on the left-hand panel.
-
-Right-click the `sample0_alphafold2.pdb` file and select `Download`.
+2. Right-click the `sample0_alphafold2.pdb` file and select `Download`.
 
 ## Foldseek
 
 The [Foldseek server](https://search.foldseek.com/search) is extremely fast and useful for identifying structural matches across a range of experimental and predicted structure databases.
 
-Upload our predicted PDB structure to the foldseek server and search for similar structures.
+> ## Careful
+>
+> When deciding to send data to an external service, it is important to understand:
+> - How the data will be handled (e.g. transferred, processed, stored, secured), and
+> - If it is appropriate to submit the data to the service you are intending to use.
+>
+> {: .source}
+{: .callout}
+
+1. Upload our predicted PDB structure to the Foldseek server and search for similar structures. Ensure that the check-boxes for all databases are selected (see screenshot below).
 
 > ## Input form
 > {% raw %}
@@ -39,7 +46,6 @@ Upload our predicted PDB structure to the foldseek server and search for similar
 > <img src="../assets/img/abacbs-fseek.png" alt="foldseek" width="800"/>
 > </p>
 > {% endraw %}
-> - Ensure that the check-boxes for all databases are selected.
 {: .keypoints}
 
 > ## Results
