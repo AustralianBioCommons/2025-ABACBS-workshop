@@ -5,14 +5,20 @@ root: .
 ---
 
 
-### Key requirement
+# Key requirements
 
-The main requirement for this workshop is a personal computer with a web browser and a command line shell program.  
-This equipment will allow you to follow the online materials and to login to a facility with the required software stack.  
+The main requirement for this workshop is a personal computer with a web browser and [Visual Studio Code (`VSCode`)](https://code.visualstudio.com/). This equipment will allow you to follow the online materials and login to a facility with the required software stack.
 
-*Windows* users: get [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html), [Visual Studio Code](https://code.visualstudio.com/) or PuTTY.  
+You should also be familiar with bash scripting. This is an introduction to Bash that you might find useful: [The Unix Shell: Summary and Setup](https://swcarpentry.github.io/shell-novice/) 
 
-*Mac*/*Linux* users: search for your **Terminal** application from the launchpad.
+## Suggested:
+
+- Google account to run colab notebooks: [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb#scrollTo=mbaIO9pWjaN0) and [SPfast](https://colab.research.google.com/github/tlitfin/SPfast/blob/main/notebooks/SPfast_AFDB_clusters_PFAM.ipynb).
+
+## Recommended for use after the workshop:
+
+- Molecular Viewer installed (PyMOL/ChimeraX)
+
 
 # Set up your computer
 
@@ -31,6 +37,7 @@ Before the workshop, you must have the following:
 
 1. `VSCode` installed
 2. The necessary VSCode extensions installed
+
 
 ## Installing Visual Studio Code
 
@@ -51,8 +58,8 @@ Specific `VSCode` extensions are required.
 
 2. In the Extensions Marketplace search bar, search for `remote ssh`. Select **"Remote - SSH"**
 
-
 **You have now configured VSCode for the workshop!**
+
 
 ### Acknowledgements
 
