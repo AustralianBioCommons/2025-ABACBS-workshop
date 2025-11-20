@@ -12,20 +12,21 @@ keypoints:
 - Structure-based annotation should be supported by complementary evidence.
 ---
 
-> ## Note
-> 
-> Now that we have our high-confidence predicted structure, we can use it to search a large database of annotated structures.
-> 
-> Similar annotated structures could provide a hypothesis about the likely function of our target protein.
-{: .prereq}
+## Database search with predicted structures
 
-## Download structure predictions
+Now that we have our high-confidence predicted structure, we can use it to search a large database of annotated structures.
+ 
+Similar annotated structures could provide a hypothesis about the likely function of our target protein.
+
+
+### Download structure predictions
 
 1. Download the `sample0_alphafold2.pdb` file located in the `output/alphafold2/standard/sample0/` directory. You can find the file by navigating to the `output/alphafold2/standard/sample0/` directory in the VS-code file browser on the left-hand panel.
 
 2. Right-click the `sample0_alphafold2.pdb` file and select `Download`.
 
-## Foldseek
+
+### Foldseek
 
 The [Foldseek server](https://search.foldseek.com/search) is extremely fast and useful for identifying structural matches across a range of experimental and predicted structure databases.
 
@@ -38,7 +39,7 @@ The [Foldseek server](https://search.foldseek.com/search) is extremely fast and 
 > {: .source}
 {: .callout}
 
-1. Upload our predicted PDB structure to the Foldseek server and search for similar structures. Ensure that the check-boxes for all databases are selected (see screenshot below).
+Upload our predicted PDB structure to the Foldseek server and search for similar structures. Ensure that the check-boxes for all databases are selected (see screenshot below).
 
 > ## Input form
 > {% raw %}
@@ -66,6 +67,7 @@ The [Foldseek server](https://search.foldseek.com/search) is extremely fast and 
 1. Upload our predicted PDB structure by **leaving the input fields blank.** 
 2. Select **Run all** to execute search for annotated structures using SPfast.
 3. **Wait ~3 minutes** for the file upload prompt to appear under the 3rd cell and upload your predicted structure (`sample0_alphafold2.pdb`).
+4. SPfast will take about ~7 minutes after uploading the query structure.
 
 > ## Input form
 > {% raw %}
@@ -74,8 +76,6 @@ The [Foldseek server](https://search.foldseek.com/search) is extremely fast and 
 > </p>
 > {% endraw %}
 {: .keypoints}
-
-SPfast will take about ~7 minutes after uploading the query structure.
 
 > ## Results
 > {% raw %}
