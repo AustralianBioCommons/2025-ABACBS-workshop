@@ -49,6 +49,10 @@ monitor jobs on the HPC, and edit, view and download files.
 
 2. Open `VSCode` to confirm it was installed correctly.
 
+<p align="center">
+<img src="../assets/img/vscode_0.png" width="700"/>
+</p>
+
 
 ## Installing the VSCode extensions
 
@@ -59,6 +63,10 @@ Specific `VSCode` extensions are required.
 2. In the Extensions Marketplace search bar, search for `remote ssh`. Select **"Remote - SSH"**
 
 **You have now configured VSCode for the workshop!**
+
+<p align="center">
+<img src="../assets/img/vscode_1.png" width="700"/>
+</p>
 
 
 ## Acknowledgements
