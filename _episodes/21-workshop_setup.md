@@ -83,7 +83,7 @@ To save you some time typing, Pawsey has set up some shortcuts for all users. We
 3. You can now clone the workshop materials into this space.
 
     ```bash
-    git clone https://github.com/tlitfin/2025-ABACBS-workshop
+    git clone https://github.com/AustralianBioCommons/2025-ABACBS-workshop
     cd 2025-ABACBS-workshop/exercises/
     ls
     ```
@@ -107,7 +107,7 @@ To save you some time typing, Pawsey has set up some shortcuts for all users. We
 9. In the terminal, execute the following command to start an interactive session on a compute node which we can use to execute our workflows.
 
    ```bash
-    salloc -t 2:00:00 -c 2 --mem 4GB
+    salloc -t 2:00:00 -c 2 --mem 4GB --reservation=proteinfold
     ```
 
 
